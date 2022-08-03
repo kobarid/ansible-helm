@@ -9,4 +9,4 @@
 
 - name: Print the specs of the Service.
   debug:
-    var: meas_service.result.spec
+    var: meas_service.resources[0].spec
