@@ -1,0 +1,12 @@
+---
+- name: Get the details of the Service and check if helm connection is working
+  kubernetes.core.k8s:
+    api_version: v1
+    kind: Service
+    name: meas-api
+    namespace: meas-api
+  register: meas_service
+
+- name: Print the specs of the Service.
+  debug:
+    var: meas_service.result.spec
