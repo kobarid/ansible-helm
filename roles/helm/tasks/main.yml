@@ -1,6 +1,6 @@
 ---
 - name: Get the details of the Service and check if helm connection is working
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     api_version: v1
     kind: Service
     name: meas-api
