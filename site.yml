@@ -1,4 +1,4 @@
 - hosts:
   - bastion
   roles:
-  - helm
+  - { role: helm, become: yes }
