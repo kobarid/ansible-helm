@@ -2,4 +2,3 @@
   - bastion
   roles:
   - role: helm
-    become: yes
